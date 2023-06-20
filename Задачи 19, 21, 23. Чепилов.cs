@@ -3,7 +3,7 @@
 
 // НАЧАЛО КОДА ЗАДАЧИ 19
 
-/*
+
 int Perevjortish(int chislo) // переворачиваем число. необязательно, но очень захотелось :)
 {
     int tsifra5 = chislo %10;
@@ -38,7 +38,7 @@ Console.Write(MUN);
 
 Console.WriteLine();
 ProverkaPalindroma(num);
-*/
+
 
 // КОНЕЦ КОДА ЗАДАЧИ 19
 
@@ -48,6 +48,7 @@ ProverkaPalindroma(num);
 // и находит расстояние между ними в 3D пространстве.
 
 // НАЧАЛО КОДА ЗАДАЧИ 21
+/*
 
 double DlinaV3D(int xA, int xB, int yA, int yB, int zA, int zB)
 {
@@ -79,6 +80,7 @@ int zCoordB = Convert.ToInt32(Console.ReadLine());
 double dist = DlinaV3D(xCoordA, xCoordB, yCoordA, yCoordB, zCoordA, zCoordB);
 Console.WriteLine($"Расстояние между A ({xCoordA},{yCoordA},{zCoordA}) и B ({yCoordB},{yCoordB},{zCoordB}) В ТРИДЭ -> {dist:f2}");
 
+*/
 // КОНЕЦ КОДА ЗАДАЧИ 21
 
 //-------------------------------------------------------------
@@ -88,7 +90,36 @@ Console.WriteLine($"Расстояние между A ({xCoordA},{yCoordA},{zCoo
 
 // НАЧАЛО КОДА ЗАДАЧИ 23
 
+/*
 
+void KuBbl_ot_1_do_N(int N)
+{
+    int curr = 0;
+    while (curr <= N)
+    {
+        int result = curr*curr*curr; // или Math.Pow(curr, 3)
+        Console.Write($"{result}, ");
+        curr++;
+    }
+    Console.WriteLine("\b\b."); // удаляем 2 знака и ставим точку в конце
+}
+void Proverka(int a)
+{
+    while (a <= 0)
+    {
+        Console.Write("сказано же - ПОЛОЖИТЕЛЬНОЕ. давай по новой -> ");
+        a = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+Console.Clear();
+Console.Write("введи положительное число -> ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Proverka(num);
+KuBbl_ot_1_do_N(num);
+
+*/
 
 // КОНЕЦ КОДА ЗАДАЧИ 23
 
