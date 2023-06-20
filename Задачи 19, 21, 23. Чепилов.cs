@@ -3,6 +3,7 @@
 
 // НАЧАЛО КОДА ЗАДАЧИ 19
 
+/*
 int Perevjortish(int chislo) // переворачиваем число. необязательно, но очень захотелось :)
 {
     int tsifra5 = chislo %10;
@@ -37,7 +38,7 @@ Console.Write(MUN);
 
 Console.WriteLine();
 ProverkaPalindroma(num);
-
+*/
 
 // КОНЕЦ КОДА ЗАДАЧИ 19
 
@@ -48,7 +49,35 @@ ProverkaPalindroma(num);
 
 // НАЧАЛО КОДА ЗАДАЧИ 21
 
+double DlinaV3D(int xA, int xB, int yA, int yB, int zA, int zB)
+{
+    double dlina = Math.Sqrt((xB - xA)*(xB - xA) + (yB - yA)*(yB - yA) + (zB - zA)*(zB - zA));
+    return dlina;
+}
 
+Console.Clear();
+
+Console.Write("введи координату xA -> ");
+int xCoordA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("введи координату xB -> ");
+int yCoordA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("введи координату yA -> ");
+int xCoordB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("введи координату yB -> ");
+int yCoordB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("введи координату yC -> ");
+int zCoordA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("введи координату yC -> ");
+int zCoordB = Convert.ToInt32(Console.ReadLine());
+
+
+double dist = DlinaV3D(xCoordA, xCoordB, yCoordA, yCoordB, zCoordA, zCoordB);
+Console.WriteLine($"Расстояние между A ({xCoordA},{yCoordA},{zCoordA}) и B ({yCoordB},{yCoordB},{zCoordB}) В ТРИДЭ -> {dist:f2}");
 
 // КОНЕЦ КОДА ЗАДАЧИ 21
 
